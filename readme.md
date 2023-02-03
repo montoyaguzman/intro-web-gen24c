@@ -86,3 +86,11 @@ something
 ### Desarrollo web
 
 something
+
+
+### Glosario
+
+Internet: Red conformada por todas las redes del mundo para comunicarse y compartir informacion.
+Web: Conjunto de información que se encuentra en una dirección determinada de internet.
+World Wide Wibe: Es un sistema que funciona a través de internet, por el cual se pueden transmitir contenido basado en estandares web.
+Plugin: Software pequeño que sirve como complemento de otro para un fin en especifico.
