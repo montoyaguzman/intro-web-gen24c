@@ -1,0 +1,136 @@
+Box model
+
+Terminal y Git
+
+GIT
+
+Repaso
+
+internet
+red de redes de comunicacion global
+
+front end
+Es un area de programacion enfocada en lo que el usuario puede ver
+
+back end
+Es un area de programacion enfocada en lo que el usuario no puede ver
+
+terminal
+programa que recibe comandos para interacturar con la PC
+cd: cambiar de carpeta (ubicacion)
+ls: lista las carpertas y archivos
+pwd: muestra la ruta/path actual
+
+sistema operativo
+la interfaz que da un sistema operativo para utilizar la computadora
+
+kernel
+base del sistema operativo
+
+linux/windows/mac
+
+explorador archivos
+
+clear - cls
+cd
+ls
+pwd
+
+html
+Lenguaje de marcado para crear la estrctura de una pagina web
+
+vscode
+Editor de codigo para facilitar su escritura
+
+css
+lenguaje estilos en cascada para dar diseño a una pagina web
+
+javascript / js
+es un lenguaje de programacion para dar funcionalidad al front end (funciona en todos) de una pagina
+
+web components (react)
+
+
+Instalacion de GIT
+Descargar un archivo ejecutable
+git --version
+2.x.x
+
+Configuracion de nuestro usuario de git
+git config --list
+git config --global user.name montoyaguzman
+git config --global user.email montoyaguzman7@gmail.com
+
+1. Estado del arte
+2. Instalacion
+3. Teoria
+
+4. Practica sencilla
+    Harry Potter
+    .gitignore
+    git add .
+    git restore --staged .
+    git commit -m "mi mensaje"
+    git remote -v
+    git + accion + variableOrigin (url) + nombreRama
+    git pull origin main
+    git push origin main
+    git checkout -B newBranchName
+    git checkout hash
+    git checkout branchName
+    git checkout -B newBranchName
+    git graph y git blame
+    commits en vscode
+    
+5. Tarea
+    Flash
+    Repositorio colaborativo
+6. Lecturas
+
+
+
+git status
+git log --oneline
+git log
+
+
+CAS0 1
+No tener un repositorio local
+crear carpeta
+git init
+git add .
+git commit -m "mensaje"
+
+CASO 2
+Tener un repositorio local
+git add .
+git commit -m "mensaje"
+
+PRACTICA
+1. En un repo desde 0 van a redactar un libro en 10 commits diferentes.
+2. Instalar la extension git graph.
+3. Que es repositorio, repositorio local y repositorio remoto y 1 ejemplo de c/u.
+4. Que es working directory y staging area.
+5. Git vs github.
+
+hash
+
+
+
+viernes
+sabado
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
