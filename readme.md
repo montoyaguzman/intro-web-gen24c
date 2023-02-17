@@ -451,9 +451,45 @@ git stash pop
 
 ### Navegador
 
-Uso del inspector de elementos
+#### Uso del inspector de elementos en Chrome
 
-Herramientas de desarrollador
+El inspector de elementos de Google Chrome es una herramienta muy útil para desarrolladores web, diseñadores y cualquier persona interesada en conocer el código fuente y la estructura de una página web.
+
+#### ¿Qué es el inspector de elementos?
+
+El inspector de elementos es una herramienta integrada en el navegador Google Chrome que permite a los usuarios ver y manipular el código fuente y la estructura de una página web. El inspector de elementos también permite a los usuarios ver el estilo y diseño de una página web, incluyendo la hoja de estilos CSS y la disposición de los elementos en la página.
+
+#### Cómo abrir el inspector de elementos
+
+Para abrir el inspector de elementos en Google Chrome, sigue estos pasos:
+
+1. Abre Google Chrome y navega a la página web que quieres inspeccionar.
+2. Haz clic derecho en cualquier parte de la página web y selecciona "Inspeccionar" en el menú desplegable.
+3. O bien, utiliza el atajo de teclado `Ctrl+Shift+I` (Windows, Linux) o `Cmd+Option+I` (Mac) para abrir el inspector de elementos.
+
+#### Cómo utilizar el inspector de elementos
+
+Una vez que hayas abierto el inspector de elementos, verás una ventana dividida en dos secciones: en la parte izquierda se encuentra el código fuente de la página web, y en la parte derecha se muestra una vista previa de la página web.
+
+Aquí tienes algunos de los usos más comunes del inspector de elementos:
+
+##### 1. Inspeccionar el código fuente
+
+El inspector de elementos permite a los usuarios ver el código HTML y CSS de una página web. Para inspeccionar un elemento específico, haz clic en él en la vista previa de la página web o en el código fuente, y se resaltará en ambas secciones. También puedes navegar por el código fuente utilizando las teclas de flecha del teclado.
+
+##### 2. Modificar el código y ver los cambios en tiempo real
+
+El inspector de elementos permite a los usuarios modificar el código HTML y CSS de una página web y ver los cambios en tiempo real en la vista previa de la página web. Para hacer esto, simplemente haz clic en el código fuente y edita el código directamente. Los cambios se aplicarán automáticamente a la vista previa de la página web.
+
+##### 3. Depurar errores
+
+El inspector de elementos también se puede utilizar para depurar errores en una página web. Por ejemplo, si un elemento no se muestra correctamente o no funciona como debería, puedes utilizar el inspector de elementos para encontrar y solucionar el problema. Al seleccionar un elemento, el inspector de elementos mostrará información sobre el elemento, incluyendo los estilos CSS aplicados, los eventos asociados y los errores en el código.
+
+##### 4. Emular dispositivos móviles
+
+El inspector de elementos también permite a los usuarios emular diferentes dispositivos móviles para ver cómo se verá una página web en diferentes tamaños de pantalla. Para hacer esto, haz clic en el icono de dispositivos móviles en la esquina superior izquierda del inspector de elementos y selecciona un dispositivo.
+
+
 
 ### Html
 
