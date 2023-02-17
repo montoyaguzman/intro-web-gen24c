@@ -1,0 +1,21 @@
+.card-container {
+    display: flex;
+    flex-direction: row;
+    /* cuando es row se puede omitir */
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    align-items: center;
+    border: solid 1px blue;
+}
+
+.button-container {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
