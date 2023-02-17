@@ -18,6 +18,7 @@
 14. [Glosario](#glosario)
 15. [Recursos](#recursos)
 16. [Areas de estudio](#areas-de-estudio)
+17. [Proyecto del modulo](https://docs.google.com/document/d/1s6y6oWGtIuyIuGL90d0rWuL8wQr6jo5jRlXx8nj7ChU/edit?usp=sharing)
 
 **Estructura de carpetas sugerida**
 
@@ -720,3 +721,7 @@ Vista de dispositivos desde inspector de elementos.
 
 SoloLearn/Absolute => Rapidin
 Fazt/W3Schools => Mas completo y estructurado
+
+
+### Areas de estudio
+
