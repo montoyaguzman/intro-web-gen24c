@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: small;
+}
+  
+:root {
+    --main-color: #b8001f;
+    --second-color: #00139f;
+    --text-light: #ffffff;
+}
+
+.grid {
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: auto 70px auto;
+}
+
+.grid > div {
+    background-color: var(--second-color);
+    color: white;
+}
+
+.grid-two {
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    
+}
+
+.grid-two > div {
+    background-color: var(--second-color);
+    color: white;
+}
+
+.grid-three {
+    background-color: pink;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    justify-items: center;
+    align-items: center;
+    height: 30vh;
+    
+}
+
+.grid-three > div {
+    background-color: var(--second-color);
+    color: white;
+}
+  
+
+.grid-four {
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 20% 30% max-content; /* min-content; */
+    grid-template-rows: 100px max-content;
+    height: 30vh;
+    
+}
+
+.grid-four > div {
+    background-color: var(--second-color);
+    color: white;
+}
+
+.grid-five {
+    background-color: pink;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    grid-template-rows: 100px max-content;
+    height: 30vh;
+    
+}
+
+.grid-five > div {
+    background-color: var(--second-color);
+    color: white;
+}
+  
+.grid-six {
+    background-color: pink;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-rows: 100px max-content;
+    height: 30vh;
+    
+}
+
+.grid-six > div {
+    background-color: var(--second-color);
+    color: white;
+}
+
+.grid-seven {
+    background-color: powderblue;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 50px 50px;
+    gap: 30px 40px;
+}
+
+.grid-seven > div {
+    background-color: var(--second-color);
+    color: white;
+}
+
+.grid-seven > div[class^="element"]:hover {
+    background-color: darksalmon;
+}
+
+.grid-seven > div.element1 {
+    background-color: teal;
+    justify-self: end;
+    align-self: start;
+}
+
+.grid-seven > div.element2 {
+    background-color: black;
+    /*CENTRADO EN AMBOS EJES*/
+    justify-self: center;
+    align-self: center;
+}
+
+.grid-seven > div.element3 {
+    background-color: rebeccapurple;
+    /*ESQUINA INFERIOR IZQUIERDA*/
+    justify-self: start;
+    align-self: end;
+}
+
+.grid-seven > div.element4 {
+    /* ESQUINA SUPERIOR IZQUIERDA */
+    justify-self: start;
+    align-self: start;
+}
+
+.grid-seven > div.element5 {
+    /* ESQUINA INFERIOR IZQUIERDA */
+    justify-self: start;
+    align-self: end;
+}
+
+.grid-seven > div.element6 {
+    /* ESQUINA CENTRO VERTICAL, ORILLA DERECHA */
+    justify-self: end;
+    align-self: center;
+}
