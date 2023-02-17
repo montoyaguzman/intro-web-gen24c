@@ -1,0 +1,31 @@
+#box-father {
+    padding: 2px;
+    border: 24px solid yellow;
+    margin: 20px;
+}
+
+.box {
+    background-color: blue;
+    color: white;
+    width: 300px;
+    height: 500px;
+
+    /* padding: 10px; */
+
+    /*
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    */
+
+    /* padding: 10px 20px; */
+
+    /* padding: 10px 20px 25px; */
+
+    /* padding: 10px 20px; 20px 25px; */
+
+    border: 24px solid red;
+    margin: 40px;
+
+}
