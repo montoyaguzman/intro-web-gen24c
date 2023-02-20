@@ -735,7 +735,9 @@ Las medidas en CSS determinan el tamaño de los elementos, existen de do tipos:
 
 #### Listado de propiedades mas usadas
 
-working...
+* [¿Conoces cuáles son las propiedades mas utilizadas en CSS?](https://blog.mgpanel.org/post/-conoces-cuales-son-las-propiedades-mas-utilizadas-en-css-).
+
+![Para aprender CSS desde cero debes conocer la lista de propiedades CSS](https://ebweb.es/wp-content/uploads/2017/04/ayuda-aprender-css-propiedades-valores.png)
 
 
 ### Flexbox
