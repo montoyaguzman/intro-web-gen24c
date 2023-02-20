@@ -552,11 +552,17 @@ El inspector de elementos también permite a los usuarios emular diferentes disp
 
 ### Html
 
+#### Etiquetas
+
 ![Sheet-html.png](https://static.platzi.com/media/user_upload/Sheet-html-1f72409c-ffd7-4865-8323-3216e9b1c509.jpg)
 
 ![](https://globaldevtools.bbva.com/bitbucket/users/mario.castelan/repos/gen-2022-bit/raw/4.FrontEnd/4.4.html/html.drawio.png?at=refs%2Fheads%2Fdevelop)![1676842835417](image/readme/1676842835417.png)
 
 ### Css
+
+#### Uso
+
+![](https://yaxchemanrique.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F1a5ff505-3601-451e-9068-fd0b9884dee4%2FUntitled.png?id=10d256e2-eefe-4cc7-b61b-54c63b55d19c&table=block&spaceId=3aca2aaa-ada9-4de7-b26a-1052031cccd5&width=2000&userId=&cache=v2)
 
 #### Anotomia de una regla
 
@@ -564,11 +570,132 @@ El inspector de elementos también permite a los usuarios emular diferentes disp
 
 #### Selectores
 
-working...
+##### Lista de selectores basicos
+
+```
+# selector universal
+/* aplica a todo el documento */
+* {
+
+}
+
+# selector de una etiqueta
+/* aplica a <tag></tag> */
+tag {
+  // css rules
+}
+
+# selector de clase
+/* aplica a <div class="class-name"></div> */
+.class-name {
+  // css rules
+}
+
+# selector de id
+/* aplica a <div class="myId"></div> */
+#myId {
+ // css rules
+}
+
+# selector de atributo
+/* aplica a <a href="www.google.com"></div> */
+a[href="www.google.com"] {
+  // css rules
+}
+
+# pseudoclase que representa a la etiqueta html
+/* funciona como html {}  */
+:root
+```
+
+##### Selectores combinados
+
+```
+
+# descendiente
+div p {
+ /* todos los p dentro de div */
+}
+
+# hijo directo
+div > p {
+ /* el p dentro de un div */
+}
+
+# elemento adyacente
+div + p {
+  /* Selecciona la etiqueta hermana de la primera */
+}
+
+# general de hermanos
+div ~ p {
+  /* todos los hermanos de p denro de div */
+}
+```
+
+##### Pseudoclases
+
+Una **pseudoclase CSS** es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento.
+
+| Pseudo-Clases |
+| ------------- |
+| :hover        |
+| :link         |
+| :active       |
+| :target       |
+| :not(s)       |
+| :focus        |
+
+```
+
+# selector:pseudoclase { propiedad: valor; }
+div:hover {
+  background-color: #F89B4D;
+}
+```
+
+##### Pseudoelementos
+
+Permiten añadir estilos a una parte concreta del documento.
+
+| Pseudo-Elementos |
+| ---------------- |
+| :first-letter    |
+| :first-line      |
+| :before          |
+| :after           |
+| :selection       |
+
+```
+
+# selector::pseudo-elemento { propiedad: valor; }
+ul li::after {
+    color: #21acde;
+    content: " | ";
+    display: inline-block;
+  }
+```
+
+**Nota:** Solo se puede usar un pseudo-elemento por selector. Debe aparecer después del selector simple.
+
+#### Herencia
+
+La herencia en CSS consiste en que si dos estilos tienen la misma jerarquia, se aplica el estilo que aparece mas cercano al elemento, sobreescribiendo a sus padres.
 
 #### Especificidad
 
-working...
+La especificidad en CSS es un grupo de reglas aplicadas a los selectores CSS para determinar qué estilo se aplica a un elemento. Cuanto más específico sea un selector, mayor será su valor en puntos y más probable será que esté presente en el estilo del elemento.
+
+| Peso  | Especificidad                   |
+| ----- | ------------------------------- |
+| X0000 | !important                      |
+| -X000 | inline                          |
+| --X00 | id                              |
+| ---X0 | clases, atributos, pseudoclases |
+| ----X | elementos y pseudolementos      |
+| ----- | selector universal              |
+
+[Especificidad en CSS: Qué es y como funciona](https://dev.to/lupitacode/especificidad-en-css-que-es-y-como-funciona-52k6)
 
 #### Box model
 
@@ -590,6 +717,24 @@ working...
 
 #### Unidades
 
+Las medidas en CSS determinan el tamaño de los elementos, existen de do tipos:
+
+* **Absolutas:** Son medidas que no están referenciadas a ninguna otra unidad, es decir, no dependen de un valor de referencia. Son unidades de medidas definidas por la física, como el  **píxel** , centímetro, metro, etc.
+* Relativas: Se calculan en base a otra unidad de medida definida, por ejemplo **em** y **rem**. l uso de ellas es más apropiado para que podamos hacer ajustes en diferentes dispositivos asegurando un layout consistente y fluido en distintas medias.
+
+![img](https://yaxchemanrique.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa3c78c1a-854a-4be7-beab-3f989c9b55c4%2FUntitled.png?id=c245ec7a-24d4-467d-b18c-44cd991b815d&table=block&spaceId=3aca2aaa-ada9-4de7-b26a-1052031cccd5&width=2000&userId=&cache=v2)
+
+![](https://yaxchemanrique.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa3c78c1a-854a-4be7-beab-3f989c9b55c4%2FUntitled.png?id=c245ec7a-24d4-467d-b18c-44cd991b815d&table=block&spaceId=3aca2aaa-ada9-4de7-b26a-1052031cccd5&width=2000&userId=&cache=v2)
+
+![](https://yaxchemanrique.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F4b962e8a-ead9-4dd4-8b4d-2abe80cf31a8%2FUntitled.png?id=186ed1b1-509e-4b63-b9e0-45804418e7d2&table=block&spaceId=3aca2aaa-ada9-4de7-b26a-1052031cccd5&width=2000&userId=&cache=v2)
+
+![](https://yaxchemanrique.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe9cc5455-3311-417c-90a2-0abb14a1cef1%2FUntitled.png?id=7015803d-3ca5-491a-af4b-b0139dd399b3&table=block&spaceId=3aca2aaa-ada9-4de7-b26a-1052031cccd5&width=2000&userId=&cache=v2)
+
+[Guia de unidades en CSS](https://www.aluracursos.com/blog/guia-de-unidades-en-css)
+
+
+#### Listado de propiedades mas usadas
+
 working...
 
 
@@ -603,17 +748,83 @@ working...
 
 ### Responsive design
 
-* Media Queries.
-* Vista de dispositivos desde inspector de elementos.
+**E****s** **una ****técnica** de diseño web **que busca** **la correcta visualización de una misma página en distintos dispositivos.** Desde ordenadores de escritorio a tablets y móviles.
+
+#### Técnicas de diseño responsivo
+
+* Uso de viewport en la etiqueta metatag.
+* Uso de Media Queries.
+* Uso de Max-Width y Min-Width.
+* Uso de medidas relativas.
+* Tamaño de fuente en un diseño responsive.
+* [Otras técnicas](https://www.ondho.com/las-9-tecnicas-para-hacer-tu-sitio-web-100-responsive/).
+
+#### **Ventajas**
+
+* Incremento en el número de visitas.
+* Integra todos tus servicios en un solo sitio web.
+* Incrementa la visibilidad para los buscadores.
+* Ahorra tiempo, no es necesario desarrollar aplicaciones distintas por dispositivo.
+* Es más sencillo administrar tu sitio.
+* Los diseños responsivos son más sencillos de mantener ya que no involucran ningún componente del lado del servidor.
+* Solo hay que modificar el CSS.
+
+#### **Media query**
+
+Es una regla o conjunto de reglas que se introducen en una hoja de estilo CSS con el objetivo de definir propiedades específicas para distintos tipos de pantallas.
+
+* [Media Queries](https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries).
+* [Capitulo 9 Media queries](https://www.arkaitzgarro.com/css3/capitulo-9.html).
+* [Guía de diseño responsivo (2023)](https://ishadeed.com/article/responsive-design/).
+* [Diseño responsivo](https://web.dev/new-responsive/).
 
 ### Best practices
 
-* [Guía de diseño responsivo (2023)](https://ishadeed.com/article/responsive-design/).
-* [Diseño responsivo](https://web.dev/new-responsive/).
+#### Tips básicos para html/css
+
+1. Usar rem como medida, pero primero reseteandola a pixeles ya que su base es 16px = 1 rem.
+
+```
+html {
+    font-size: 62,5%;
+}
+```
+
+2. Resetear los valores del html para evitar margin, padding y border por defecto. Asi mismo se recomienda trabajar con box-sizing de tipo border box para que cada caja considere el margin, padding y border como parte del width y heigth (por defecto solo es el padding)).
+
+```
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+```
+
+3. Utilizar el selector root para establecer variables con ayuda de los custom properties.
+
+```
+:root {
+  --first-color: #16f;
+  --second-color: #ff7;
+}
+
+#firstParagraph {
+  background-color: var(--first-color);
+  color: var(--second-color);
+}
+```
+
+#### Nomenclaturas
+
 * [Naming Conventions - BEM](https://www.freecodecamp.org/news/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849/).
 * [Naming Conventions - by Scaler](https://www.scaler.com/topics/css-class-naming-convention/).
-* [CUBE -  Composition Utility Block Exception](https://cube.fyi)
-* [BEM - Block, Element, Modifier](https://en.bem.info/methodology/)
+* [CUBE -  Composition Utility Block Exception](https://cube.fyi).
+* [BEM - Block, Element, Modifier](https://en.bem.info/methodology/).
+
+#### Usabilidad
+
+* [Usabilidad web: qué es y 6 recomendaciones para mejorarla](https://www.inboundcycle.com/diccionario-marketing-online/usabilidad-web)
 
 ### Proyecto del módulo
 
@@ -621,34 +832,36 @@ Se encuentra en google drive...
 
 ### Glosario
 
-**Red de computadoras:**
-
-* **Internet:** Red conformada por todas las redes del mundo para comunicarse y compartir informacion.
-* **Web:** Conjunto de información que se encuentra en una dirección determinada de internet.
-* **World Wide Wibe:** Es un sistema que funciona a través de internet, por el cual se pueden transmitir contenido basado en estandares web.
-* **Plugin:** Software pequeño que sirve como complemento de otro para un fin en especifico.
-* **Proceso:** Cualquier tarea que ocurre en nuestro informatico.
-* **Proceso en segundo plano:** Es un proceso que el usuario no tiene que hacer algo para que suceda.
+* **Buena práctica:** Es una actividad que se ha demostrado que funciona bien y produce buenos resultados, y, por lo tanto, se recomienda como modelo.
 * **Carpeta home:** carpeta de su usuario /Users/montoyitag (~/)
-* **Carpeta raiz:** Es la base de nuestro disco duro. Por ejemplo: disco C:\ o en linux /
-* **Hosting:** Un hosting  **es un servicio de alojamiento para páginas web bajo un servidor** .
-* **Sistema operativo:** Es el software que coordina y dirige todos los servicios y aplicaciones que utiliza el usuario en una computadora.
-* **Kernel:** El kernel es el núcleo de un sistema operativo y, por tanto, la interfaz (middleware) entre el software y el hardware.
-* **Ip:** La dirección IP es una etiqueta numérica, por ejemplo "192.0.10.1" que identifica, de manera lógica y jerárquica, a una interfaz en la red. Existen IP públicas y IP privadas.
+* **Carpeta raíz:** Es la base de nuestro disco duro. Por ejemplo: disco C:\ o en linux /
+* **Cliente:** Es quien solicita información dentro de un sistema informático.
+* **DNS:** Es un tipo de servidor de redes de computadora que se encarga de convertir direcciones web en dominios IP y viceversa. Ejemplo: 8.8.8.8 => www.google.com
 * **Dominio:**  Es una dirección web compuesta por un nombre de sitio web y una extensión de dominio. Ejemplo: google.com
-* **URL:** Es una dirección web compuesta por al menos el protocolo, dominio y ruta.
-* **DNS:** Es un tipo de servidor de redes de computadora que en encarga de convertir direcciones web en dominios IP y viceversa. Ejemplo: 8.8.8.8 => www.google.com
-* **Cliente:** Es quien solicita información dentro de un sistema informatico.
-* **Servidor:** Es una instancia fisica o lógica que responde peticiones (request).
+* **Dummy:** Es un dato o elemento de prueba, sirve para simular datos.
 * **Estándar:** Es un patrón o modelo a seguir, generalmente derivado de un documento o certificación.
-* **Buena práctica:** Es un actividad que se ha demostrado que funciona bien y produce buenos resultados, y, por lo tanto, se recomienda como modelo.
-
-- **Path:** Es una ruta o dirección donde se encuentra alojado un recurso en un sistema de archivos. Existen rutas relativas como ../../my-docs o absolutas como C:\users\juan\Documents\tarea\tesis.doc
-- **Puerto:** un lugar donde se abre una conexion para acceder a un servicio.
-- **Dummy:** Es un dato o elemento de prueba, sirve para simular datos.
-- **Scaffolding:** Estructura de carpetas y archivos de un proyecto de desarrollo.
-- **Requerimiento funcional:** Son features que el usuario o negocio requieren para su proyecto de software. Aportan un valor operativo.
-- **Requerimiento no funcional:** Son features que no apotan un valor operativo pero si son requeridos para que el software funcionen correctamente (seguridad, despliegue, pruebas, etc.).
+* **Hosting:** Un hosting  **es un servicio de alojamiento para páginas web bajo un servidor** .
+* **Internet:** Red conformada por todas las redes del mundo para comunicarse y compartir información.
+* **Ip:** La dirección IP es una etiqueta numérica, por ejemplo "192.0.10.1" que identifica, de manera lógica y jerárquica, a una interfaz en la red. Existen IP públicas y IP privadas.
+* **Kernel:** El kernel es el núcleo de un sistema operativo y, por tanto, la interfaz (middleware) entre el software y el hardware.
+* **Mockup:** En diseño es un bosquejo o representación de una vista o maqueta, en programación es información de prueba.
+* **Path:** Es una ruta o dirección donde se encuentra alojado un recurso en un sistema de archivos. Existen rutas relativas como ../../my-docs o absolutas como C:\users\juan\Documents\tarea\tesis.doc
+* **Plugin:** Software pequeño que sirve como complemento de otro para un fin en específico.
+* **Proceso:** Cualquier tarea que ocurre en nuestro informático.
+* **Proceso en segundo plano:** Es un proceso en el que el usuario no tiene que hacer algo para que suceda.
+* **Prototipo:** Es una representación aparente pero concreta de parte o la totalidad de una idea de negocio o sobre un producto o servicio.
+* **Puerto:** un lugar donde se abre una conexión para acceder a un servicio.
+* **Requerimiento funcional:** Son features que el usuario o negocio requieren para su proyecto de software. Aportan un valor operativo.
+* **Requerimiento no funcional:** Son features que no aportan un valor operativo pero si son requeridos para que el software funcione correctamente (seguridad, despliegue, pruebas, etc.).
+* **Red de computadoras:** Conjunto de computadoras interconectadas entre sí para compartir datos y servicios.
+* **Scaffolding:** Estructura de carpetas y archivos de un proyecto de desarrollo.
+* **Servidor:** Es una instancia fisica o lógica que responde peticiones (request).
+* **Sistema operativo:** Es el software que coordina y dirige todos los servicios y aplicaciones que utiliza el usuario en una computadora.
+* **URL:** Es una dirección web compuesta por al menos el protocolo, dominio y ruta.
+* **Viewport:** En términos de navegadores web, se refiere a la parte del documento que usted está viendo en el momento, es el ancho y alto de navegador en un momento del tiempo.
+* **Web:** Conjunto de información que se encuentra en una dirección determinada de internet.
+* **Wireframe:** Es una representación visual de un sitio web.
+* **World Wide Wibe:** Es un sistema que funciona a través de internet, por el cual se puede transmitir contenido basado en estándares web.
 
 ### Path sugerido
 
@@ -771,6 +984,7 @@ Se encuentra en google drive...
 * [faizan.webappdev](https://www.instagram.com/webdesignuniversity/).
 * [sobrecodigo](https://www.instagram.com/sobrecodigo/).
 * [programmers_community_](https://www.instagram.com/programmers_community_/).
+* [Lupita code](https://twitter.com/lupitacode).
 
 ##### YouTube Videos
 
@@ -793,3 +1007,5 @@ Se encuentra en google drive...
 ### Areas de estudio
 
 ##### Lógica de programación
+
+Area de la programación enfocada en formar el aprendizaje logico matematicos para aplicarlo en la solucion de algoritmos por medio de distintas representaciones (lenguaje natural, diagramas de flujos, pseudocódigo y código).
