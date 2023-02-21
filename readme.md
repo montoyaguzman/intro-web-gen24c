@@ -552,11 +552,15 @@ El inspector de elementos también permite a los usuarios emular diferentes disp
 
 ### Html
 
+En html existen elementos de **inline** (se limitan a su contenido) y elemento de **bloque** (ocupan toda la fila).
+
 #### Etiquetas
 
 ![Sheet-html.png](https://static.platzi.com/media/user_upload/Sheet-html-1f72409c-ffd7-4865-8323-3216e9b1c509.jpg)
 
 ![](https://globaldevtools.bbva.com/bitbucket/users/mario.castelan/repos/gen-2022-bit/raw/4.FrontEnd/4.4.html/html.drawio.png?at=refs%2Fheads%2Fdevelop)![1676842835417](image/readme/1676842835417.png)
+
+**NOTA:** Se recomienda usar las etiquetas para lo que fueron destinadas y no para otra cosa, por ejemplo no usar span para hacer una lista cuando ya existe ul y ol.
 
 ### Css
 
@@ -732,21 +736,23 @@ Las medidas en CSS determinan el tamaño de los elementos, existen de do tipos:
 
 [Guia de unidades en CSS](https://www.aluracursos.com/blog/guia-de-unidades-en-css)
 
-
 #### Listado de propiedades mas usadas
 
 * [¿Conoces cuáles son las propiedades mas utilizadas en CSS?](https://blog.mgpanel.org/post/-conoces-cuales-son-las-propiedades-mas-utilizadas-en-css-).
 
 ![Para aprender CSS desde cero debes conocer la lista de propiedades CSS](https://ebweb.es/wp-content/uploads/2017/04/ayuda-aprender-css-propiedades-valores.png)
 
-
 ### Flexbox
 
 ![1676843097444](image/readme/1676843097444.png)
 
+[Video explicativo de flexbox](https://www.youtube.com/watch?v=EVBlLkfh2V0&t=1917s)
+
 ### CSS Grid
 
 ![1676843110002](image/readme/1676843110002.png)
+
+[Video explicativo de css grid](https://www.youtube.com/watch?v=Fj6BGtNvXIc)
 
 ### Responsive design
 
@@ -816,6 +822,10 @@ html {
   color: var(--second-color);
 }
 ```
+
+4. [ ] Utilizar las etiquetas para la finalidad que fueron creadas. Esto es por 2 razones:
+    *  Mejor legibilidad de código.
+    *  SEO del sitio.
 
 #### Nomenclaturas
 
