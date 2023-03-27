@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: small;
+}
+
+:root {
+  --main-color: #b8001f;
+  --second-color: #00139f;
+  --text-light: #ffffff;
+}
+
+.nav-bar {
+  display: flex;
+  background: red;
+  color: white;
+  padding: 5px 8px;
+  /* margin: 0 0 10px 0; */
+  /* margin-bottom: 10px; */
+  background-color: var(--main-color);
+}
+
+.banner {
+  display: flex;
+  width: 10%;
+  height: 14vh;
+  align-items: center;
+}
+
+.ico {
+  border-radius: 14px;
+}
+
+.title {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.container-menu {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  margin: 0 7px;
+}
+
+.shopping-car {
+  width: 15%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.dashboard {
+  display: flex;
+  background-color: var(--second-color);
+  height: 100%;
+  padding: 20px;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+
+.card {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-light);
+  margin: 0 15px;
+}
+
+.card_title {
+}
+
+.card_description {
+  text-align: center;
+  font-size: 10px;
+}
+
+.my-btn {
+}

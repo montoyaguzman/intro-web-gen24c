@@ -1,0 +1,50 @@
+.grid {
+    display: grid;
+    width: 100%;
+    height: 50vh;
+    grid-template-areas: "head head"
+        "nav main"
+        "nav foot";
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 10vh 30vh 10vh;
+}
+
+.grid>header {
+    background-color: purple;
+    grid-area: head;
+}
+
+.grid>nav {
+    background-color: pink;
+    grid-area: nav;
+}
+
+.grid>main {
+    background-color: yellow;
+    grid-area: main;
+}
+
+.grid>footer {
+    background-color: green;
+    grid-area: foot;
+}
+
+.flexible {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+
+.item {
+    width: 20%;
+    height: 50px;
+}
+
+@media (max-width: 600px) {
+    .item {
+        display: flex;
+        color: red;
+        flex-wrap: wrap;
+    }
+}

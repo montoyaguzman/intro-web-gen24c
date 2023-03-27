@@ -1,0 +1,36 @@
+.container {
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	height: 100vh;
+	width: 100vw;
+}
+
+.box {
+	color: #fff;
+	font-size: 2rem;
+	background-color: #444;
+	height: 100%;
+}
+
+.a {
+	grid-column: 1 / span 2;
+}
+
+.b {
+	grid-row: 1 / -1;
+}
+
+.c {
+	grid-column: 1 / span 1;
+	grid-row: 2 / span 1;
+	/* Otra opción es: */
+	/* grid-row: 2 / -1; */
+}
+
+.d {
+	grid-column: 2 / span 1;
+	grid-row: 2 / span 1;
+	/* grid-row: 2 / -1; */
+}
